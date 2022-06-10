@@ -6,12 +6,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server-json":"json-server --watch db.json --port 4000"
+    "server-json": "json-server --watch db.json --port 4000"
   },
   "dependencies": {
     "json-server": "^0.17.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
