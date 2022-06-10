@@ -4,12 +4,17 @@ import axios from "axios";
 export default function SuperHeroesPage() {
   const [isLoading, setIsLoading] = useState(true)
   const [data, setData] = useState([])
+  const [error, setError] = useState('')
 
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await axios
-        .get("http://localhost:4000/superheroes")
-        .catch((e) => console.log(e))
+        .get("http://localhost:4000/superheroes55")
+        .catch(error => {
+          setError(error.message)
+          setIsLoading(false)
+        })
+
       setData(data)
       setIsLoading(false)
     }
@@ -20,7 +25,12 @@ export default function SuperHeroesPage() {
   return (
     <div>
       <h2 className="title">SuperHeroes Page</h2>
-      {isLoading ? (
+
+      {error && (
+        <div>{error}</div>
+      )}
+
+      {!error && isLoading ? (
         <div>Data is loading</div>
       ) : (
         data.map((hero) => {
