@@ -15,13 +15,11 @@ const DynamicParallelQueries = ({ heroIds }) => {
     })
   )
 
-  console.log(queryResults)
-
   return (
     <div>
       <h2 className="title">Dynamic Parallel Queries</h2>
-      {queryResults?.map((result) => {
-        return <div>{result.data.data.name}</div>
+      {queryResults?.map((result, index) => {
+        return <div key={index}>{result?.data?.data.name}</div>
       })}
     </div>
   )

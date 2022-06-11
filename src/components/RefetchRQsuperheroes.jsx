@@ -8,7 +8,7 @@ export default function RefetchRQsuperheroes() {
   const navigate = useNavigate()
 
   const onSuccess = ({ data }) => {
-    console.log("Perform side effect after data fetching", data)
+    console.log("Perform side effect after data fetching")
   }
 
   const onError = (error) => {

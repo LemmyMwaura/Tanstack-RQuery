@@ -3,7 +3,14 @@ body{
   padding: 0;
   margin: 0;
   background-color: #141E27;
-  color: white;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
@@ -16,6 +23,7 @@ body{
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-bottom: 2rem;
 }
 
 .superhero-link{
