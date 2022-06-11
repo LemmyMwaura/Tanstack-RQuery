@@ -5,8 +5,7 @@ import { useParams } from 'react-router-dom';
 export default function RQSuperhero() {
   const { heroId } = useParams()
   const {data, isLoading, isError, error} = superHeroData(heroId)
-  console.log(data)
-  
+ 
   return (
     <div>
       <h2 className="title">Super Hero Details</h2>

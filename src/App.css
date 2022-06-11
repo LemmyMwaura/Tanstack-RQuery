@@ -18,6 +18,10 @@ body{
   gap: 20px;
 }
 
+.superhero-link{
+  cursor: pointer;
+}
+
 a{
   text-decoration: none;
   font-weight: bold;
