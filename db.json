@@ -34,5 +34,17 @@
       "id":3,
       "name":"Rachel Green"
     }
+  ],
+  "users":[
+    {
+      "id": "lemminton@gmail.com",
+      "channelId":"codeWithLemmy"
+    }
+  ],
+  "channels":[
+    {
+      "id":"codeWithLemmy",
+      "courses":["react","vue","angular"]
+    }
   ]
 }
