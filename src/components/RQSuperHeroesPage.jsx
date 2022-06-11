@@ -5,11 +5,22 @@ export default function RQSuperHeroespage() {
   const { isLoading, isError, error, data } = useQuery("super-heroes", () => {
     return axios
       .get("http://localhost:4000/superheroes")
+  },
+  {
+    // cacheTime: 5000000,
+    // staleTime:0,
+    // refetchOnMount: true,
+    // refetchOnWindowFocus: true,
+    // refetchInterval:2000, //NB stops when browser losses focus
+    // refetchIntervalInBackground: true, //When sets to true, Keeps fetching data even when the browser loses focus
+    // enabled:false //Fetch on user request e.g click of a button
+    
   })
   
   return (
     <div>
       <h2 className="title">RQ Super Heroes Page</h2>
+      {/* <button onClick={refetch}>Fetch Heroes</button> */}
 
       {isError && (
         <div>{error.message}</div>
