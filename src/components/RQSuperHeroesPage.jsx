@@ -1,14 +1,20 @@
 import { useQuery } from "react-query"
 import axios from "axios"
+import { useState } from "react"
 
 export default function RQSuperHeroespage() {
+  const [interval, setInterval] = useState(3000)
 
-  const onSuccess = (data) => {
+  const onSuccess = ({ data }) => {
     console.log('Perform side effect after data fetching', data)
+    if(data.length >= 4){
+      setInterval(0)
+    }
   }
 
   const onError = (error) => {
     console.log('Perform side effect after encoutering error', error)
+    setInterval(0)
   }
 
   const { isLoading, isError, error, data } = useQuery("super-heroes", () => {
@@ -20,7 +26,7 @@ export default function RQSuperHeroespage() {
     // staleTime:0,
     // refetchOnMount: true,
     // refetchOnWindowFocus: true,
-    // refetchInterval:3000, //NB stops when browser losses focus
+    refetchInterval:interval, //NB stops when browser losses focus
     // refetchIntervalInBackground: true, //When sets to true, Keeps fetching data even when the browser loses focus
     // enabled:false //Fetch on user request e.g click of a button
     onSuccess,
