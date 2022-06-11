@@ -5,12 +5,14 @@ import SuperHeroesPage from './SuperHeroesPage';
 import RQSuperHeroespage from './RQSuperHeroesPage'
 import RefetchRQsuperheroes from './refetchRQsuperheroes';
 import RQSuperhero from './RQSuperhero';
+import ParallelQueriesPage from './ParallelQueriesPage';
 
 export default function Header() {
   return (
     <div>
       <nav className='primary-nav'>
         <NavLink to='/'>Home</NavLink>
+        <NavLink to='/rq-parallel'>Parallel Queries</NavLink>
         <NavLink to='/super-heroes'>SuperHeroes</NavLink>
         <NavLink to='/rq-super-heroes'>RQ SuperHeroes</NavLink>
         <NavLink to='/refetch-rq-super-heroes'>RefetchRQHeroesOnClick</NavLink>
@@ -18,6 +20,7 @@ export default function Header() {
 
       <Routes>
         <Route path='/' element={<Homepage/>}/>
+        <Route path='/rq-parallel' element={<ParallelQueriesPage/>}/>
         <Route path='/super-heroes' element={<SuperHeroesPage/>}/>
         <Route path='/rq-super-heroes' element={<RQSuperHeroespage/>}/>
         <Route path='/refetch-rq-super-heroes' element={<RefetchRQsuperheroes/>}/>
