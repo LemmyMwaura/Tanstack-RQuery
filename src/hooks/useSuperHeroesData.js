@@ -16,10 +16,10 @@ export const useSuperHeroesData = (onSuccess, onError, interval, window, enabled
     enabled, //Fetch on user request e.g click of a button
     onSuccess,
     onError,
-    select: (data) => {
-      //Select performs data transformation and also data filtering
-      const superheroesNames = data.data.map((hero) => hero.name)
-      return superheroesNames
-    },
+    // select: (data) => {
+    //   //Select performs data transformation and also data filtering
+    //   const superheroesNames = data.data.map((hero) => hero.name)
+    //   return superheroesNames
+    // },
   })
 }
