@@ -39,10 +39,9 @@ export default function RQSuperHeroespage() {
   )
 
   return (
-    <div>
-      <h2 className="title">RQ Super Heroes Page</h2>
-
+    <div className="RQ-superheroes">
       <div>
+        <h2 className="title">RQ Super Heroes Page</h2>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -64,23 +63,26 @@ export default function RQSuperHeroespage() {
         <button className="btn" onClick={handleAddHero}>Add Hero</button>
       </div>
 
-      {isError && <div>{error.message}</div>}
+      <div>
+        <h2 className="title">The Heroes</h2>
+        {isError && <div>{error.message}</div>}
 
-      {isLoading ? (
-        <div>Loading...</div>
-      ) : (
-        data?.data.map((hero) => {
-          return (
-            <div
-              className="superhero-link"
-              key={hero.id}
-              onClick={() => navigate(`/rq-super-heroes/${hero.id}`)}
-            >
-              {hero.name}
-            </div>
-          )
-        })
-      )}
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          data?.data.map((hero) => {
+            return (
+              <div
+                className="superhero-link"
+                key={hero.id}
+                onClick={() => navigate(`/rq-super-heroes/${hero.id}`)}
+              >
+                {hero.name}
+              </div>
+            )
+          })
+        )}
+      </div>
     </div>
   )
 }
