@@ -39,6 +39,16 @@
       "name": "Catwoman",
       "alterEgo": "Selina Kyle",
       "id": 8
+    },
+    {
+      "name": "Aquaman",
+      "alterEgo": "Arthur Curry",
+      "id": 9
+    },
+    {
+      "name": "Green Arrow",
+      "alterEgo": "Oliver Queen",
+      "id": 10
     }
   ],
   "friends": [
