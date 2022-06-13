@@ -20,7 +20,7 @@ function InfiniteQueries() {
 
   return (
     <div>
-      <h2 className="title">PaginatedQueries</h2>
+      <h2 className="title">Infinite Queries</h2>
 
       {isError && <div>{error.message}</div>}
 
@@ -39,6 +39,7 @@ function InfiniteQueries() {
       )}
 
       <button
+        className="btn"
         disabled={!hasNextPage}
         onClick={fetchNextPage}
       >Load More

@@ -34,7 +34,7 @@ function PaginatedQueries() {
         })
       )}
 
-      <div>
+      <div className="btns">
         <button
           className="btn"
           disabled={pageNumber === 1}

@@ -39,6 +39,13 @@ a{
   border-radius: 0.5rem;
 }
 
+.btns{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
 .btn{
   background-color: orange;
   padding: 0.5rem;
@@ -51,6 +58,10 @@ a{
 
 .btn:active{
   transform: scale(0.95);
+}
+
+.btn:disabled:active{
+  transform: scale(1);
 }
 
 .form-group{
