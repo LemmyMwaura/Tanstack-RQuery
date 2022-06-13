@@ -24,6 +24,16 @@
       "name": "The Flash",
       "alterEgo": "Barry Allen",
       "id": 5
+    },
+    {
+      "name": "Shazam",
+      "alterEgo": "Billy Batson",
+      "id": 6
+    },
+    {
+      "name": "Captain America",
+      "alterEgo": "Steve Rodgers",
+      "id": 7
     }
   ],
   "friends": [

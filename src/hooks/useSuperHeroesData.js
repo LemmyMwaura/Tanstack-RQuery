@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useQuery, useMutation } from "react-query"
+import { useQuery, useMutation, useQueryClient } from "react-query"
 
 const fetchUserData = () => {
   return axios.get("http://localhost:4000/superheroes")
@@ -29,5 +29,10 @@ export const useSuperHeroesData = (onSuccess, onError, interval, window, enabled
 }
 
 export const useAddSuperHeroesData = () => {
-  return useMutation(addSuperHero)
+  const queryClient = useQueryClient()
+  return useMutation(addSuperHero, {
+    onSuccess: () => {
+      queryClient.invalidateQueries('super-heroes')
+    }
+  })
 }

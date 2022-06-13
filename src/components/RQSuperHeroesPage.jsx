@@ -26,6 +26,8 @@ export default function RQSuperHeroespage() {
     if (name == '' || alterEgo == '') return
     const herodetails = { name, alterEgo }
     mutate(herodetails)
+    setName('')
+    setAlterEgo('')
   }
 
   const { isLoading, isError, error, data } = useSuperHeroesData(
