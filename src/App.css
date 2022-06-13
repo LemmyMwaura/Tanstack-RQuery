@@ -38,3 +38,33 @@ a{
   background-color: orange;
   border-radius: 0.5rem;
 }
+
+.btn{
+  background-color: orange;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.btn:active{
+  transform: scale(0.95);
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.form-group input{
+  outline: none;
+  background: none;
+  color: white;
+  border-radius: 0.5rem;
+  height: 1.5rem;
+  padding: 0 0.4rem;
+  border: 2px solid orange;
+}

@@ -1,83 +1,92 @@
 {
-  "superheroes":[
+  "superheroes": [
     {
-      "id":1,
+      "id": 1,
       "name": "Batman",
       "alterEgo": "Bruce Wayne"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Superman",
       "alterEgo": "Clark Kent"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "The Hulk",
       "alterEgo": "Bruce Banner"
+    },
+    {
+      "name": "The Flash",
+      "alterEgo": "Barry Allen",
+      "id": 5
     }
   ],
   "friends": [
     {
-      "id":1,
-      "name":"Chandler Bing"
+      "id": 1,
+      "name": "Chandler Bing"
     },
     {
-      "id":2,
-      "name":"Joey Tribbiani"
+      "id": 2,
+      "name": "Joey Tribbiani"
     },
     {
-      "id":3,
-      "name":"Rachel Green"
+      "id": 3,
+      "name": "Rachel Green"
     }
   ],
-  "users":[
+  "users": [
     {
       "id": "lemminton@gmail.com",
-      "channelId":"codeWithLemmy"
+      "channelId": "codeWithLemmy"
     }
   ],
-  "channels":[
+  "channels": [
     {
-      "id":"codeWithLemmy",
-      "courses":["react","vue","angular"]
+      "id": "codeWithLemmy",
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     }
   ],
-  "colors":[
+  "colors": [
     {
-      "id":1,
+      "id": 1,
       "label": "red"
     },
     {
-      "id":2,
+      "id": 2,
       "label": "blue"
     },
     {
-      "id":3,
+      "id": 3,
       "label": "green"
     },
     {
-      "id":4,
+      "id": 4,
       "label": "yellow"
     },
     {
-      "id":5,
+      "id": 5,
       "label": "black"
     },
     {
-      "id":6,
+      "id": 6,
       "label": "white"
     },
     {
-      "id":7,
+      "id": 7,
       "label": "orange"
     },
     {
-      "id":8,
+      "id": 8,
       "label": "teal"
     }
   ]
