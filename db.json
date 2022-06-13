@@ -34,6 +34,11 @@
       "name": "Captain America",
       "alterEgo": "Steve Rodgers",
       "id": 7
+    },
+    {
+      "name": "Catwoman",
+      "alterEgo": "Selina Kyle",
+      "id": 8
     }
   ],
   "friends": [
