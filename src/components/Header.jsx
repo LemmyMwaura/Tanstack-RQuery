@@ -9,6 +9,7 @@ import ParallelQueriesPage from './ParallelQueriesPage';
 import DynamicParallelQueries from './DynamicParallelQueries';
 import DependentQueriesPage from './DependentQueriesPage';
 import PaginatedQueries from './PaginatedQueries';
+import InfiniteQueries from './InfiniteQueries';
 
 export default function Header() {
   return (
@@ -26,6 +27,10 @@ export default function Header() {
         <NavLink to='/rq-dependent'>Dependent Queries</NavLink>
         <NavLink to='/rq-paginated'>Paginated Queries</NavLink>
       </nav>
+      
+      <nav>
+        <NavLink to='/rq-infinite'>Infinite Queries</NavLink>
+      </nav>
 
       <Routes>
         <Route path='/' element={<Homepage/>}/>
@@ -33,7 +38,7 @@ export default function Header() {
         <Route path='/rq-dynamic-parallel' element={<DynamicParallelQueries heroIds={[1,3]}/>}/>
         <Route path='/rq-dependent' element={<DependentQueriesPage email="lemminton@gmail.com"/>}/>
         <Route path='/rq-paginated' element={<PaginatedQueries/>}/>
-
+        <Route path='/rq-infinite' element={<InfiniteQueries/>}/>
         <Route path='/super-heroes' element={<SuperHeroesPage/>}/>
         <Route path='/rq-super-heroes' element={<RQSuperHeroespage/>}/>
         <Route path='/refetch-rq-super-heroes' element={<RefetchRQsuperheroes/>}/>
