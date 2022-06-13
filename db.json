@@ -49,6 +49,11 @@
       "name": "Green Arrow",
       "alterEgo": "Oliver Queen",
       "id": 10
+    },
+    {
+      "name": "IronMan",
+      "alterEgo": "Tony Stark",
+      "id": 11
     }
   ],
   "friends": [

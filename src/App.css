@@ -45,6 +45,8 @@ a{
   outline: none;
   border: none;
   border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .btn:active{
